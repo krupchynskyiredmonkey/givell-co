@@ -13,23 +13,33 @@ window.onload = function () {
 }
 
 $(document).ready(function (){
-  const getX = document.querySelector('.selectorForJs');
-  const h3 = document.querySelector('.third-page-h3');
-  let distanceX = getX.getBoundingClientRect();
-  let paddingDistance = distanceX.left;
-  console.log(paddingDistance);
-  h3.style.paddingLeft = `${paddingDistance}px`;
-  console.log(h3.style.paddingLeft)
+  if(window.innerWidth > 1024) {
+    const getX = document.querySelector('.selectorForJs');
+    const h3 = document.querySelector('.third-page-h3');
+    let distanceX = getX.getBoundingClientRect();
+    let paddingDistance = distanceX.left;
+    console.log(window.innerWidth);
+    h3.style.paddingLeft = `${paddingDistance}px`;
+    console.log(h3.style.paddingLeft)
+  } else {
+    const h3 = document.querySelector('.third-page-h3');
+    h3.style.paddingLeft = '0px';
+  }
 });
 
 window.onresize = function() {
+  if(window.innerWidth > 1024) {
   const getX = document.querySelector('.selectorForJs');
   const h3 = document.querySelector('.third-page-h3');
   let distanceX = getX.getBoundingClientRect();
   let paddingDistance = distanceX.left;
-  console.log(paddingDistance);
+  console.log(window.innerWidth);
   h3.style.paddingLeft = `${paddingDistance}px`;
   console.log(h3.style.paddingLeft)
+} else {
+  const h3 = document.querySelector('.third-page-h3');
+  h3.style.paddingLeft = '0px';
+}
 };
 
 // const menuItemHome = document.querySelector('#home-screen');
