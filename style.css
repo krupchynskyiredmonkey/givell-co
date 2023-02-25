@@ -2472,12 +2472,14 @@ line-height: 140%;
   display: flex;
   justify-content: center;
   transition: all 0.5s ease;
+  
 }
 
 .preloader img {
   width: 140px;
   height: 140px;
   margin: auto;
+  margin-left: 43%;
   transition: all 0.5s ease;
   animation: preloader-img 0.8s cubic-bezier(0,.94,1,.06) infinite;
 }
@@ -2485,6 +2487,12 @@ line-height: 140%;
 .loaded_hiding .preloader {
   transition: 0.5s;
   left: 100vw;
+  
+}
+
+.loaded_hiding .preloader img{
+  margin-left: 100vw;
+  transition: 0.5s;
   
 }
 
