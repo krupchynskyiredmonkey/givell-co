@@ -2476,12 +2476,20 @@ line-height: 140%;
 }
 
 .preloader img {
-  width: 140px;
-  height: 140px;
+  width: 10vw;
+  height: 10vw;
   margin: auto;
-  margin-left: 43%;
+  margin-left: calc(50% - 5vw);
   transition: all 0.5s ease;
   animation: preloader-img 0.8s cubic-bezier(0,.94,1,.06) infinite;
+}
+
+@media (max-width: 1024px) {
+  .preloader img {
+    width: 25vw;
+    height: 25vw;
+    margin-left: calc(50% - 12.5vw);
+  }
 }
 
 .loaded_hiding .preloader {
