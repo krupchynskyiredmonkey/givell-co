@@ -13,7 +13,6 @@ window.onload = function () {
 }
 
 $(document).ready(function (){
-  if(window.innerWidth > 1024) {
     const getX = document.querySelector('.selectorForJs');
     const h3 = document.querySelector('.third-page-h3');
     let distanceX = getX.getBoundingClientRect();
@@ -21,14 +20,10 @@ $(document).ready(function (){
     console.log(window.innerWidth);
     h3.style.paddingLeft = `${paddingDistance}px`;
     console.log(h3.style.paddingLeft)
-  } else {
-    const h3 = document.querySelector('.third-page-h3');
-    h3.style.paddingLeft = '0px';
-  }
+
 });
 
 window.onresize = function() {
-  if(window.innerWidth > 1024) {
   const getX = document.querySelector('.selectorForJs');
   const h3 = document.querySelector('.third-page-h3');
   let distanceX = getX.getBoundingClientRect();
@@ -36,11 +31,35 @@ window.onresize = function() {
   console.log(window.innerWidth);
   h3.style.paddingLeft = `${paddingDistance}px`;
   console.log(h3.style.paddingLeft)
-} else {
-  const h3 = document.querySelector('.third-page-h3');
-  h3.style.paddingLeft = '0px';
-}
 };
+
+$(document).ready(function (){
+
+    const getX = document.querySelector('.main-text-wrapper');
+    const h3 = document.querySelector('#lottie1-mobile');
+    let distanceX = getX.getBoundingClientRect();
+    let paddingDistance = distanceX.left;
+    console.log(window.innerWidth);
+    h3.style.marginLeft = `${paddingDistance}px`;
+    console.log(h3.style.paddingLeft)
+    console.log(200)
+
+    h3.style.paddingLeft = '0px';
+});
+
+window.onresize = function() {
+  const getX = document.querySelector('.main-text-wrapper');
+  const h3 = document.querySelector('#lottie1-mobile');
+  let distanceX = getX.getBoundingClientRect();
+  let paddingDistance = distanceX.left;
+  console.log(window.innerWidth);
+  h3.style.marginLeft = `${paddingDistance}px`;
+  console.log(h3.style.paddingLeft)
+  h3.style.paddingLeft = '0px';
+
+};
+
+
 
 // const menuItemHome = document.querySelector('#home-screen');
 // const menuItemWhy = document.querySelector('#why-screen');
