@@ -525,6 +525,20 @@ window.addEventListener("scroll", function (event) {
   }
 });
 
+// SVG COLOR CHANGE ON HOVER
+// const instagramIcon = document.querySelector('#socInst');
+// console.log(instagramIcon.src);
+// instagramIcon.addEventListener('mouseout', function(){
+//   instagramIcon.src = 'img/soc-inst.svg';
+// });
+
+// instagramIcon.addEventListener('mouseover', function(){
+//   instagramIcon.src = 'img/soc-inst-red.svg';
+// });
+// instagramIcon.src = 'img/soc-inst-red.svg';
+// console.log(instagramIcon.src)
+
+
 
 /* 
 * Lottie files
