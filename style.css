@@ -2460,6 +2460,7 @@ transform: rotate(-4deg);
 
 .top-CTA {
   margin-top: 0px!important;
+  height: 50px;
 }
 
 .form-top {
