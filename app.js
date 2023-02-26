@@ -18,6 +18,7 @@ $(document).ready(function (){
     let distanceX = getX.getBoundingClientRect();
     let paddingDistance = distanceX.left;
     console.log(window.innerWidth);
+    h3.style.paddingLeft = 0;
     h3.style.paddingLeft = `${paddingDistance}px`;
     console.log(h3.style.paddingLeft)
 
@@ -30,32 +31,45 @@ window.onresize = function() {
   let paddingDistance = distanceX.left;
   console.log(window.innerWidth);
   h3.style.paddingLeft = `${paddingDistance}px`;
-  console.log(h3.style.paddingLeft)
+  console.log(`Padding Distance = ${paddingDistance }`)
+  console.log(`${h3.style.paddingLeft}`)
 };
 
 $(document).ready(function (){
 
     const getX = document.querySelector('.main-text-wrapper');
-    const h3 = document.querySelector('#lottie1-mobile');
+    const lottie = document.querySelector('#lottie1-mobile');
     let distanceX = getX.getBoundingClientRect();
     let paddingDistance = distanceX.left;
     console.log(window.innerWidth);
-    h3.style.marginLeft = `${paddingDistance}px`;
-    console.log(h3.style.paddingLeft)
+    lottie.style.marginLeft = `${paddingDistance}px`;
     console.log(200)
 
-    h3.style.paddingLeft = '0px';
+    const getXSelector = document.querySelector('.selectorForJs');
+    const h3 = document.querySelector('.third-page-h3');
+    let distanceXforH3 = getXSelector.getBoundingClientRect();
+    let paddingDistanceH3 = distanceXforH3.left;
+    h3.style.paddingLeft = `${paddingDistanceH3}px`;
+
+    // h3.style.paddingLeft = '0px';
 });
 
 window.onresize = function() {
   const getX = document.querySelector('.main-text-wrapper');
-  const h3 = document.querySelector('#lottie1-mobile');
+  const lottie = document.querySelector('#lottie1-mobile');
   let distanceX = getX.getBoundingClientRect();
   let paddingDistance = distanceX.left;
   console.log(window.innerWidth);
-  h3.style.marginLeft = `${paddingDistance}px`;
-  console.log(h3.style.paddingLeft)
-  h3.style.paddingLeft = '0px';
+  lottie.style.marginLeft = `${paddingDistance}px`;
+
+  const getXSelector = document.querySelector('.selectorForJs');
+    const h3 = document.querySelector('.third-page-h3');
+    let distanceXforH3 = getXSelector.getBoundingClientRect();
+    let paddingDistanceH3 = distanceXforH3.left;
+    h3.style.paddingLeft = `${paddingDistanceH3}px`;
+
+
+  // h3.style.paddingLeft = '0px';
 
 };
 
